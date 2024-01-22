@@ -14,7 +14,7 @@ def list_division(my_list_1, my_list_2, list_length):
             print("wrong type")
             res_ = 0
         except ZeroDivisionError:
-            print("res_ision by 0")
+            print("division by 0")
             res_ = 0
         except IndexError:
             print("out of range")
