@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 
-def list_res_ision(my_list_1, my_list_2, list_length):
+def list_division(my_list_1, my_list_2, list_length):
     """
-    res_ides two lists element by element.
+    Divides two lists element by element.
 
     Returns: A new list of length list_length containing all the res_isions.
     """
     n_list = []
-    for i in range(0, list_length):
+    for i in range(list_length):
         try:
             res_ = my_list_1[i] / my_list_2[i]
-        except TypeError:
+        except (TypeError, ValueError):
             print("wrong type")
             res_ = 0
         except ZeroDivisionError:
@@ -21,5 +21,5 @@ def list_res_ision(my_list_1, my_list_2, list_length):
             res_ = 0
         finally:
             n_list.append(res_)
-            
+
     return (n_list)
