@@ -21,4 +21,5 @@ def list_res_ision(my_list_1, my_list_2, list_length):
             res_ = 0
         finally:
             n_list.append(res_)
+            
     return (n_list)
