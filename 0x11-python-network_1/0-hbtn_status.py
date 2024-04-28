@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 import urllib.request as req_
 
 url_ = 'https://alx-intranet.hbtn.io/status'
