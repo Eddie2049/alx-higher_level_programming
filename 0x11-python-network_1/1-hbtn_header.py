@@ -12,6 +12,7 @@ import sys
 if __name__ == "__main__":
     url = sys.argv[1]
 
-    with req_.urlopen(url) as response:
+    re_ = req_.Request(url)
+    with req_.urlopen(re_) as response:
         x_request_id = dict(response.headers).get("X-Request-Id")
         print(x_request_id)
