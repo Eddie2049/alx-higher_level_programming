@@ -4,8 +4,8 @@ def divisible_by_2(my_list=[]):
     if it's divisible by 2, otherwise False
     """
     result = []
-    for num in my_list:
-        if num % 2 == 0:
+    for elem in my_list:
+        if elem % 2 == 0:
             result.append(True)
         else:
             result.append(False)
