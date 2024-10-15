@@ -4,6 +4,7 @@
 
 def write_file(filename="", text=""):
     """function that Writes a string to a UTF8 text file.
+    the method .write returns the number of chars written.
     """
     with open(filename, "w", encoding="utf-8") as f:
         return f.write(text)
